@@ -2,33 +2,49 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Consórcio de Carro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consórcio Digital</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- Cabeçalho -->
   <header>
-    <h1>Seu Novo Carro com Consórcio</h1>
-    <p>Simule agora sem compromisso</p>
+    <img src="logo.png" alt="Logo do Consórcio" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#simulador">Simulador</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section class="formulario">
-    <form action="https://formsubmit.co/SEUEMAILAQUI" method="POST">
-      <input type="text" name="nome" placeholder="Seu nome" required />
-      <input type="email" name="email" placeholder="Seu e-mail" required />
-      <input type="tel" name="telefone" placeholder="Seu telefone" required />
-      <select name="modelo">
-        <option value="">Escolha o modelo</option>
-        <option value="gol">Gol</option>
-        <option value="polo">Polo</option>
-        <option value="t-cross">T-Cross</option>
-      </select>
-      <button type="submit">Quero simular</button>
+  <!-- Seção Hero -->
+  <section class="hero">
+    <h1>Seu Novo Carro Está Aqui</h1>
+    <p>Simule agora seu consórcio de forma 100% online.</p>
+    <a href="#simulador" class="btn">Simule Agora</a>
+  </section>
+
+  <!-- Seção Simulador -->
+  <section id="simulador" class="simulador">
+    <h2>Simule Seu Consórcio</h2>
+    <form>
+      <label>Valor do carro:</label>
+      <input type="number" placeholder="Ex: 40000" />
+      
+      <label>Prazo em meses:</label>
+      <input type="number" placeholder="Ex: 60" />
+      
+      <button type="submit">Calcular</button>
     </form>
   </section>
 
+  <!-- Rodapé -->
   <footer>
-    <p>© 2025 Seu Nome ou Empresa</p>
+    <p>&copy; 2025 Consórcio Digital. Todos os direitos reservados.</p>
   </footer>
+
 </body>
 </html>

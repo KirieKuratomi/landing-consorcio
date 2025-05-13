@@ -1,24 +1,119 @@
-body {
-  font-family: Arial, sans-serif;
+/* Reset simples */
+* {
   margin: 0;
   padding: 0;
-  text-align: center;
-  background-color: #f7f7f7;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+/* Header */
 header {
-  background-color: #003b5c;
-  color: white;
-  padding: 2rem;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 
-.formulario {
-  margin: 2rem;
+.logo {
+  width: 120px;
 }
 
-form {
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #0073e6;
+}
+
+/* Hero */
+.hero {
+  background-image: url('banner.jpg'); /* Substitua por sua imagem */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 20px;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #0073e6;
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #005bb5;
+}
+
+/* Simulador */
+.simulador {
+  background: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.simulador h2 {
+  margin-bottom: 30px;
+}
+
+.simulador form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 20px;
   max-width: 400px;
-  margin:
+  margin: auto;
+}
+
+.simulador input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.simulador button {
+  padding: 12px;
+  background-color: #0073e6;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.simulador button:hover {
+  background-color: #005bb5;
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
