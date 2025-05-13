@@ -29,11 +29,44 @@
 
   <section class="simulador" id="simulador">
     <h2>Simule seu consórcio</h2>
-    <form>
-      <input type="number" placeholder="Valor desejado (ex: 50000)" required>
-      <input type="number" placeholder="Quantidade de parcelas (ex: 60)" required>
-      <button type="submit">Calcular</button>
-    </form>
+ <form action="https://formsubmit.co/greiceambrosio5@gmail.com" method="POST">
+  <label for="modelo">Modelo do Carro</label>
+  <select id="modelo" name="Modelo do Carro" required>
+    <option value="">Selecione um modelo</option>
+    <option value="Gol">Gol Seminovo</option>
+    <option value="Voyage">Voyage</option>
+    <option value="Polo">Polo</option>
+    <option value="Virtus">Virtus</option>
+    <option value="Nivus">Nivus</option>
+    <option value="T-Cross">T-Cross</option>
+    <option value="Taos">Taos</option>
+    <option value="Jetta">Jetta</option>
+    <option value="Saveiro">Saveiro</option>
+    <option value="Amarok">Amarok</option>
+    <option value="Golf">Golf</option>
+    <option value="Tiguan">Tiguan</option>
+    <option value="Passat">Passat</option>
+    <option value="Fox">Fox</option>
+    <option value="Up">Up!</option>
+  </select>
+
+  <label for="nome">Nome Completo*</label>
+  <input type="text" id="nome" name="Nome Completo" required>
+
+  <label for="email">Email*</label>
+  <input type="email" id="email" name="Email" required>
+
+  <label for="telefone">Telefone com DDD*</label>
+  <input type="tel" id="telefone" name="Telefone com DDD" required>
+
+  <label for="cep">CEP*</label>
+  <input type="text" id="cep" name="CEP" required>
+
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+  <button type="submit">Solicitar Cotação</button>
+</form>
+
   </section>
 
   <footer>
