@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -8,40 +9,33 @@
 </head>
 <body>
 
-  <!-- Cabeçalho -->
   <header>
-    <img src="logo.png" alt="Logo do Consórcio" class="logo" />
+    <img src="logo.png" alt="Logo Consórcio" class="logo">
     <nav>
       <ul>
-        <li><a href="#sobre">Sobre</a></li>
         <li><a href="#simulador">Simulador</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Seção Hero -->
   <section class="hero">
-    <h1>Seu Novo Carro Está Aqui</h1>
-    <p>Simule agora seu consórcio de forma 100% online.</p>
-    <a href="#simulador" class="btn">Simule Agora</a>
+    <div class="hero-content">
+      <h1>Seu novo carro está mais perto</h1>
+      <p>Faça uma simulação online e comece seu consórcio agora mesmo.</p>
+      <a href="https://wa.me/5511999999999" class="btn-whatsapp" target="_blank">Falar com um especialista</a>
+    </div>
   </section>
 
-  <!-- Seção Simulador -->
-  <section id="simulador" class="simulador">
-    <h2>Simule Seu Consórcio</h2>
+  <section class="simulador" id="simulador">
+    <h2>Simule seu consórcio</h2>
     <form>
-      <label>Valor do carro:</label>
-      <input type="number" placeholder="Ex: 40000" />
-      
-      <label>Prazo em meses:</label>
-      <input type="number" placeholder="Ex: 60" />
-      
+      <input type="number" placeholder="Valor desejado (ex: 50000)" required>
+      <input type="number" placeholder="Quantidade de parcelas (ex: 60)" required>
       <button type="submit">Calcular</button>
     </form>
   </section>
 
-  <!-- Rodapé -->
   <footer>
     <p>&copy; 2025 Consórcio Digital. Todos os direitos reservados.</p>
   </footer>

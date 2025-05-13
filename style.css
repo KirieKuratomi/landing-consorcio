@@ -1,4 +1,4 @@
-/* Reset simples */
+
 * {
   margin: 0;
   padding: 0;
@@ -7,17 +7,16 @@
 
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f4;
+  background-color: #f9f9f9;
 }
 
-/* Header */
 header {
-  background: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .logo {
@@ -30,53 +29,48 @@ nav ul {
   gap: 20px;
 }
 
-nav ul li a {
+nav a {
   text-decoration: none;
   color: #333;
   font-weight: bold;
 }
 
-nav ul li a:hover {
-  color: #0073e6;
-}
-
-/* Hero */
 .hero {
-  background-image: url('banner.jpg'); /* Substitua por sua imagem */
+  background-image: url('banner.jpg');
   background-size: cover;
   background-position: center;
-  text-align: center;
-  padding: 100px 20px;
   color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: auto;
 }
 
 .hero h1 {
-  font-size: 40px;
+  font-size: 42px;
   margin-bottom: 20px;
 }
 
 .hero p {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 30px;
 }
 
-.btn {
-  background-color: #0073e6;
-  color: #fff;
-  padding: 15px 30px;
-  text-decoration: none;
-  font-size: 18px;
+.btn-whatsapp {
+  background-color: #25D366;
+  color: white;
+  padding: 15px 25px;
   border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.btn:hover {
-  background-color: #005bb5;
-}
-
-/* Simulador */
 .simulador {
-  background: #fff;
-  padding: 40px 20px;
+  padding: 60px 20px;
+  background: #ffffff;
   text-align: center;
 }
 
@@ -85,32 +79,25 @@ nav ul li a:hover {
 }
 
 .simulador form {
+  max-width: 400px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-width: 400px;
-  margin: auto;
 }
 
-.simulador input {
-  padding: 10px;
+.simulador input, .simulador button {
+  padding: 15px;
   font-size: 16px;
 }
 
 .simulador button {
-  padding: 12px;
   background-color: #0073e6;
   color: #fff;
-  font-size: 18px;
   border: none;
   cursor: pointer;
 }
 
-.simulador button:hover {
-  background-color: #005bb5;
-}
-
-/* Rodapé */
 footer {
   background-color: #333;
   color: #fff;
